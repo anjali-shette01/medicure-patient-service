@@ -6,12 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/anjali-shette01/medicure-patient-service.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 bat 'mvn clean package'
