@@ -8,15 +8,15 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'cd patient-service && mvn clean package'
-
+                dir('patient-service') {   // <-- change directory to nested folder
+                    bat 'mvn clean package'
+                }
             }
         }
 
         stage('Docker Build') {
             steps {
-               bat 'cd patient-service && docker build -t %IMAGE_NAME% .'
-
+                bat 'docker build -t %IMAGE_NAME% patient-service'
             }
         }
 
