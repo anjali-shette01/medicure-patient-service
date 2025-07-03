@@ -8,13 +8,15 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'mvn clean package'
+                bat 'cd patient-service && mvn clean package'
+
             }
         }
 
         stage('Docker Build') {
             steps {
-                bat 'docker build -t %IMAGE_NAME% .'
+               bat 'cd patient-service && docker build -t %IMAGE_NAME% .'
+
             }
         }
 
