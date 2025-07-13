@@ -15,24 +15,36 @@ public class PatientService {
     private PatientRepository repository;
 
     public Patient register(Patient patient) {
-        System.out.println("👉 Registering patient: " + patient); // Add this log
+        System.out.println("👉 Registering patient: " + patient);
         try {
+            if (patient.getPatientId() == null || patient.getPatientId().isBlank()) {
+                throw new IllegalArgumentException("Patient ID must not be null or empty.");
+            }
+
+            if (repository.existsById(patient.getPatientId())) {
+                throw new IllegalArgumentException("Patient with ID " + patient.getPatientId() + " already exists.");
+            }
+
             Patient savedPatient = repository.save(patient);
-            System.out.println("✅ Saved patient: " + savedPatient); // Log after saving
+            System.out.println("✅ Saved patient: " + savedPatient);
             return savedPatient;
+
         } catch (Exception e) {
             System.err.println("❌ Error while saving patient: " + e.getMessage());
             e.printStackTrace();
-            throw e; // Re-throw for visibility in controller
+            throw e;
         }
     }
 
     public Patient update(String id, Patient patient) {
-        Patient existing = repository.findById(id).orElseThrow();
+        Patient existing = repository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Patient with ID " + id + " not found."));
+        
         existing.setName(patient.getName());
         existing.setAge(patient.getAge());
         existing.setGender(patient.getGender());
         existing.setDisease(patient.getDisease());
+
         return repository.save(existing);
     }
 
