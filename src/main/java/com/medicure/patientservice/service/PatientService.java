@@ -47,7 +47,17 @@ public class PatientService {
 
     @PostConstruct
     public void preloadData() {
+    if (!repository.existsById("P001")) {
         register(new Patient("P001", "Amit", 35, "Male", "Diabetes"));
-        register(new Patient("P002", "Sita", 29, "Female", "Fever"));
+    } else {
+        System.out.println("⚠️ Patient P001 already exists.");
     }
+
+    if (!repository.existsById("P002")) {
+        register(new Patient("P002", "Sita", 29, "Female", "Fever"));
+    } else {
+        System.out.println("⚠️ Patient P002 already exists.");
+    }
+}
+
 }
