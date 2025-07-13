@@ -15,7 +15,7 @@ public class PatientService {
     private PatientRepository repository;
 
     public Patient register(Patient patient) {
-         System.out.println("👉 Registering patient: " + patient); // Add this log
+        System.out.println("👉 Registering patient: " + patient); // Add this log
         try {
             Patient savedPatient = repository.save(patient);
             System.out.println("✅ Saved patient: " + savedPatient); // Log after saving
@@ -26,7 +26,6 @@ public class PatientService {
             throw e; // Re-throw for visibility in controller
         }
     }
-    
 
     public Patient update(String id, Patient patient) {
         Patient existing = repository.findById(id).orElseThrow();
@@ -47,17 +46,16 @@ public class PatientService {
 
     @PostConstruct
     public void preloadData() {
-    if (!repository.existsById("P001")) {
-        register(new Patient("P001", "Amit", 35, "Male", "Diabetes"));
-    } else {
-        System.out.println("⚠️ Patient P001 already exists.");
-    }
+        if (!repository.existsById("P001")) {
+            register(new Patient("P001", "Amit", 35, "Male", "Diabetes"));
+        } else {
+            System.out.println("⚠️ Patient P001 already exists.");
+        }
 
-    if (!repository.existsById("P002")) {
-        register(new Patient("P002", "Sita", 29, "Female", "Fever"));
-    } else {
-        System.out.println("⚠️ Patient P002 already exists.");
+        if (!repository.existsById("P002")) {
+            register(new Patient("P002", "Sita", 29, "Female", "Fever"));
+        } else {
+            System.out.println("⚠️ Patient P002 already exists.");
+        }
     }
-}
-
 }
