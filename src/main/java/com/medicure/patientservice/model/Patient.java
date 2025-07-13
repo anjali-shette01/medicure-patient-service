@@ -2,13 +2,10 @@ package com.medicure.patientservice.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
+import jakarta.persistence.Version; // ✅ Add this import
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 @Data
@@ -25,5 +22,5 @@ public class Patient {
     private String disease;
 
     @Version
-    private Long version;
+    private Long version;  // ✅ For optimistic locking
 }
