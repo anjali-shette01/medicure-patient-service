@@ -23,4 +23,7 @@ public class Patient {
     private int age;
     private String gender;
     private String disease;
+
+    @Version
+    private Long version;
 }
