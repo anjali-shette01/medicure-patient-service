@@ -1,0 +1,287 @@
+#TYPE Microsoft.PowerShell.Commands.HistoryInfo
+"Id","CommandLine","ExecutionStatus","StartExecutionTime","EndExecutionTime"
+"1","try { . ""c:\Users\vijay\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1"" } catch {}","Completed","03-07-2025 20:06:24","03-07-2025 20:06:24"
+"2","mvn spring-boot:run
+","Completed","03-07-2025 20:06:26","03-07-2025 20:06:29"
+"3","mvn clean install
+mvn spring-boot:run
+","Completed","03-07-2025 20:09:32","03-07-2025 20:09:37"
+"4","mvn spring-boot:run
+","Completed","03-07-2025 20:11:47","03-07-2025 20:11:49"
+"5","mvn clean install -U
+","Completed","03-07-2025 20:12:02","03-07-2025 20:12:04"
+"6","mvn -X spring-boot:run
+","Completed","03-07-2025 20:12:14","03-07-2025 20:12:17"
+"7","dir pom.xml
+","Completed","03-07-2025 20:14:49","03-07-2025 20:14:49"
+"8","cd C:\patient-service\patient-service
+","Completed","03-07-2025 20:16:50","03-07-2025 20:16:50"
+"9","mvn clean install
+mvn spring-boot:run
+","Completed","03-07-2025 20:16:59","03-07-2025 20:17:36"
+"10","cd C:\patient-service
+mvn clean package
+","Completed","03-07-2025 20:41:40","03-07-2025 20:41:42"
+"11","cd C:\patient-service\patient-service
+","Completed","03-07-2025 20:42:25","03-07-2025 20:42:25"
+"12","C:\patient-service\patient-service\target\
+","Completed","03-07-2025 20:42:36","03-07-2025 20:42:36"
+"13","mvn clean package
+","Completed","03-07-2025 20:43:20","03-07-2025 20:43:35"
+"14","docker build -t medicure/patient-service .
+","Completed","03-07-2025 20:44:04","03-07-2025 20:44:05"
+"15"," docker build -t medicure/patient-service","Completed","03-07-2025 20:48:23","03-07-2025 20:48:23"
+"16","docker build -t medicure/patient-service .
+","Completed","03-07-2025 20:48:48","03-07-2025 20:48:52"
+"17","dir target
+","Completed","03-07-2025 20:50:57","03-07-2025 20:50:57"
+"18","cd C:\patient-service\patient-service
+docker build -t medicure/patient-service .
+","Completed","03-07-2025 20:52:01","03-07-2025 20:52:07"
+"19","docker run -p 8081:8080 medicure/patient-service
+","Stopped","03-07-2025 20:53:23","03-07-2025 21:05:48"
+"20","git add Jenkinsfile
+git commit -m ""Add Jenkins pipeline""
+git push
+","Completed","03-07-2025 21:06:13","03-07-2025 21:06:17"
+"21","git rm patient-service/Jenkinsfile
+git add Jenkinsfile
+git commit -m ""Move Jenkinsfile to repo root""
+git push origin main
+","Completed","03-07-2025 21:16:18","03-07-2025 21:16:22"
+"22","C:\patient-service\patient-service\Jenkinsfile
+","Completed","03-07-2025 21:17:11","03-07-2025 21:17:11"
+"23","dir .\Jenkinsfile
+","Completed","03-07-2025 21:17:50","03-07-2025 21:17:50"
+"24","git status
+","Completed","03-07-2025 21:18:14","03-07-2025 21:18:15"
+"25","git add Dockerfile
+git commit -m ""Add Dockerfile""
+git push origin main
+","Completed","03-07-2025 21:18:55","03-07-2025 21:18:59"
+"26","git mv patient-service/Jenkinsfile Jenkinsfile
+git commit -m ""Move Jenkinsfile to repo root""
+git push origin main
+","Completed","03-07-2025 21:23:48","03-07-2025 21:23:51"
+"27","git mv Jenkinsfile ../
+","Completed","03-07-2025 21:24:56","03-07-2025 21:24:56"
+"28","cd ..
+","Completed","03-07-2025 21:25:07","03-07-2025 21:25:07"
+"29","dir Jenkinsfile
+","Completed","03-07-2025 21:25:14","03-07-2025 21:25:14"
+"30","git add Jenkinsfile
+git commit -m ""Move Jenkinsfile to repo root""
+git push origin main
+","Completed","03-07-2025 21:25:23","03-07-2025 21:25:26"
+"31","git add Jenkinsfile
+git commit -m ""Fix Jenkinsfile: add stages block""
+git push origin main
+","Completed","03-07-2025 21:38:45","03-07-2025 21:38:48"
+"32","git add Jenkinsfile
+git commit -m ""Fix Jenkinsfile: run commands inside patient-service folder""
+git push origin main
+","Completed","03-07-2025 21:43:12","03-07-2025 21:43:16"
+"33","git add Jenkinsfile
+git commit -m ""Fix Jenkinsfile: run commands inside patient-service folder""
+git push origin main
+","Completed","03-07-2025 21:51:47","03-07-2025 21:51:50"
+"34","cd patient-servive","Completed","03-07-2025 22:03:03","03-07-2025 22:03:03"
+"35","dir patient-service","Completed","03-07-2025 22:03:53","03-07-2025 22:03:53"
+"36","cd C:\patient-service\patient-service","Completed","03-07-2025 22:04:14","03-07-2025 22:04:14"
+"37","mvn clean package -X","Completed","03-07-2025 22:04:29","03-07-2025 22:04:46"
+"38","mvn clean package -Dmaven.wagon.httpconnectionManager.timeout=60000
+","Completed","03-07-2025 22:07:01","03-07-2025 22:07:03"
+"39","mvn clean package -Dmaven.wagon.httpconnectionManager.timeout=60000","Completed","03-07-2025 22:07:56","03-07-2025 22:07:58"
+"40","mvn -Dmaven.wagon.httpconnectionManager.timeout=60000 clean package
+","Completed","03-07-2025 22:20:16","03-07-2025 22:20:18"
+"41","mvn -Dmaven.wagon.httpconnectionManager.timeout=60000 clean package","Completed","03-07-2025 22:22:16","03-07-2025 22:22:18"
+"42","mvn ""-Dmaven.wagon.httpconnectionManager.timeout=60000"" clean package","Completed","03-07-2025 22:22:58","03-07-2025 22:23:14"
+"43","docker tag medicure/patient-service your_dockerhub/patient-service:latest
+docker push your_dockerhub/patient-service:latest
+","Completed","03-07-2025 22:35:04","03-07-2025 22:35:07"
+"44","docker login
+","Completed","03-07-2025 22:36:29","03-07-2025 22:36:34"
+"45","docker tag medicure/patient-service vijayshette/patient-service:latest
+docker push vijayshette/patient-service:latest
+","Completed","03-07-2025 22:38:28","03-07-2025 22:38:31"
+"46","docker tag medicure/patient-service anjali8329/patient-service:latest
+docker push anjali8329/patient-service:latest
+","Completed","03-07-2025 22:39:23","03-07-2025 22:40:00"
+"47","kubectl apply -f patient-service-deployment.yaml
+kubectl apply -f patient-service-service.yaml
+","Completed","03-07-2025 22:45:18","03-07-2025 22:45:18"
+"48","cd C:\patient-service","Completed","03-07-2025 22:45:35","03-07-2025 22:45:35"
+"49","kubectl apply -f patient-service-deployment.yaml
+kubectl apply -f patient-service-service.yaml
+","Completed","03-07-2025 22:45:45","03-07-2025 22:45:46"
+"50","kubectl get pods
+kubectl get svc
+","Completed","03-07-2025 22:45:54","03-07-2025 22:45:55"
+"51","kubectl describe pod patient-service-587dfbbc6d-vtfxf
+","Completed","03-07-2025 22:48:35","03-07-2025 22:48:35"
+"52","kubectl apply -f your-deployment.yaml
+","Completed","03-07-2025 22:51:47","03-07-2025 22:51:47"
+"53","kubectl apply -f patient-service-deployment.yaml","Completed","03-07-2025 22:53:05","03-07-2025 22:53:05"
+"54","kubectl get pods
+kubectl describe pod <pod-name>
+","Failed","03-07-2025 22:53:15","03-07-2025 22:53:15"
+"55","kubectl get pods
+kubectl describe pod <pod-name>","Failed","03-07-2025 22:53:27","03-07-2025 22:53:27"
+"56","kubectl get pods","Completed","03-07-2025 22:55:01","03-07-2025 22:55:02"
+"57","kubectl get svc","Completed","03-07-2025 22:55:25","03-07-2025 22:55:26"
+"58","mvn clean test
+","Completed","04-07-2025 17:53:49","04-07-2025 17:53:51"
+"59","cd C:\patient-service\patient-service\target\test-classes\com\medicure\patientservice","Completed","04-07-2025 17:54:56","04-07-2025 17:54:56"
+"60","mvn clean test","Completed","04-07-2025 17:55:06","04-07-2025 17:55:08"
+"61","cd C:\patient-service\patient-service","Completed","04-07-2025 17:56:33","04-07-2025 17:56:33"
+"62","mvn clean test","Completed","04-07-2025 17:56:48","04-07-2025 17:57:03"
+"63","mvn surefire-report:report-only
+","Completed","04-07-2025 17:57:54","04-07-2025 17:58:04"
+"64","git add test-reports/
+git commit -m ""Added test HTML report""
+git push origin main
+","Completed","04-07-2025 18:01:24","04-07-2025 18:01:27"
+"65","git add test-reports/
+git commit -m ""Added test HTML report""
+git push origin main
+","Completed","04-07-2025 18:12:07","04-07-2025 18:12:10"
+"66","git add target/test-reports/ 
+git commit -m ""Added test HTML report""
+git push origin main","Completed","04-07-2025 18:13:24","04-07-2025 18:13:26"
+"67","git add test-reports/
+git commit -m ""Added test HTML report""
+git push origin main
+","Completed","04-07-2025 18:15:27","04-07-2025 18:15:30"
+"68","git add Test Reports/  git commit -m ""Added test HTML report"" git push origin main ","Completed","04-07-2025 18:16:41","04-07-2025 18:16:41"
+"69","git add Test Reports/","Completed","04-07-2025 18:17:02","04-07-2025 18:17:02"
+"70"," git commit -m ""Added test HTML report""","Completed","04-07-2025 18:17:51","04-07-2025 18:17:51"
+"71","git add surefire.html
+","Completed","04-07-2025 18:27:53","04-07-2025 18:27:53"
+"72","dir ""Test Reports\surefire.html""
+","Completed","04-07-2025 18:29:08","04-07-2025 18:29:08"
+"73","git add ""Test Reports/surefire.html""
+","Completed","04-07-2025 18:29:26","04-07-2025 18:29:26"
+"74","git commit -m ""Add Surefire test report from Test Reports folder""
+","Completed","04-07-2025 18:29:33","04-07-2025 18:29:34"
+"75","git push origin main
+","Completed","04-07-2025 18:29:41","04-07-2025 18:29:43"
+"76","git pull origin main
+","Completed","04-07-2025 18:30:47","04-07-2025 18:30:49"
+"77","git add <conflicted-files>
+","Failed","04-07-2025 18:31:17","04-07-2025 18:31:17"
+"78","git add patient-service/src/main/resources/application.properties
+git commit -m ""Update application.properties before merge""
+","Completed","04-07-2025 18:40:29","04-07-2025 18:40:29"
+"79","git add src/main/resources/application.properties pom.xml
+","Completed","04-07-2025 18:42:35","04-07-2025 18:42:35"
+"80","git add .
+","Completed","04-07-2025 18:42:55","04-07-2025 18:42:55"
+"81","git commit -m ""Update application.properties, pom.xml and add test + YAMLs""
+","Completed","04-07-2025 18:43:02","04-07-2025 18:43:03"
+"82","git pull origin main
+","Completed","04-07-2025 18:43:09","04-07-2025 18:43:10"
+"83","git push origin main
+","Completed","04-07-2025 18:43:19","04-07-2025 18:43:21"
+"84","git pull --rebase origin main
+","Completed","04-07-2025 18:44:17","04-07-2025 18:44:18"
+"85","git push origin main
+","Completed","04-07-2025 18:44:31","04-07-2025 18:44:33"
+"86","git status
+","Completed","04-07-2025 18:45:09","04-07-2025 18:45:10"
+"87","git add src/main/resources/application.properties
+git commit -m ""Resolved merge conflict in application.properties""
+git push origin main
+","Completed","04-07-2025 19:12:21","04-07-2025 19:12:24"
+"88","git push origin main
+","Completed","04-07-2025 19:14:02","04-07-2025 19:14:05"
+"89","git add src/main/resources/application.properties pom.xml
+","Completed","04-07-2025 19:14:37","04-07-2025 19:14:38"
+"90","git add .
+","Completed","04-07-2025 19:14:44","04-07-2025 19:14:45"
+"91","git commit -m ""Update application.properties, pom.xml and add test + YAMLs""
+","Completed","04-07-2025 19:14:50","04-07-2025 19:14:50"
+"92","git add src/test/java/com/medicure/patientservice/PatientServiceTest.java
+git add ../patient-service-deployment.yaml
+git add ../patient-service-service.yaml
+","Completed","04-07-2025 19:15:07","04-07-2025 19:15:08"
+"93","git commit -m ""Update application.properties, pom.xml and add test + YAMLs""
+","Completed","04-07-2025 19:15:16","04-07-2025 19:15:16"
+"94","git pull origin main
+","Completed","04-07-2025 19:15:25","04-07-2025 19:15:26"
+"95","git push origin main
+","Completed","04-07-2025 19:15:31","04-07-2025 19:15:34"
+"96","mvn clean test
+","Completed","04-07-2025 19:19:35","04-07-2025 19:19:52"
+"97","mvn spring-boot:run","Completed","04-07-2025 19:26:06","04-07-2025 19:26:18"
+"98","mvn clean test","Completed","04-07-2025 19:26:30","04-07-2025 19:26:46"
+"99","mvn spring-boot:run
+","Completed","04-07-2025 19:31:28","04-07-2025 19:31:38"
+"100","mvn clean test
+","Completed","04-07-2025 19:31:58","04-07-2025 19:32:14"
+"101","mvn spring-boot:run
+","Completed","04-07-2025 19:33:42","04-07-2025 19:33:52"
+"102","mvn clean test
+","Completed","04-07-2025 19:34:02","04-07-2025 19:34:17"
+"103","cd C:\patient-service\patient-service
+mvn spring-boot:run
+","Completed","04-07-2025 19:44:01","04-07-2025 19:44:12"
+"104","mvn test
+","Completed","04-07-2025 19:44:29","04-07-2025 19:44:47"
+"105","mvn test","Completed","04-07-2025 19:57:39","04-07-2025 19:57:54"
+"106","mvn spring-boot:run","Completed","04-07-2025 20:08:11","04-07-2025 20:08:19"
+"107","mvn test","Completed","04-07-2025 20:09:27","04-07-2025 20:09:38"
+"108","mvn clean compile
+","Completed","04-07-2025 20:13:50","04-07-2025 20:13:55"
+"109","mvn test
+","Completed","04-07-2025 20:14:06","04-07-2025 20:14:20"
+"110","mvn spring-boot:run
+","Completed","04-07-2025 20:22:50","04-07-2025 20:23:01"
+"111","mvn spring-boot:run
+","Completed","04-07-2025 20:25:06","04-07-2025 20:25:16"
+"112","mvn test
+","Completed","04-07-2025 20:28:20","04-07-2025 20:28:34"
+"113","terraform init
+","Completed","04-07-2025 22:08:21","04-07-2025 22:08:21"
+"114","terraform plan
+","Completed","04-07-2025 22:08:32","04-07-2025 22:08:32"
+"115","terraform plan
+","Completed","04-07-2025 22:09:36","04-07-2025 22:09:36"
+"116","cd C:\patient-service\patient-service\terraform-patient-service
+terraform init
+","Completed","04-07-2025 22:10:24","04-07-2025 22:11:17"
+"117","terraform plan
+","Completed","04-07-2025 22:11:28","04-07-2025 22:11:45"
+"118","terraform apply
+","Completed","04-07-2025 22:12:05","04-07-2025 22:13:08"
+"119","cd C:\patient-service\patient-service\terraform-patient-service
+terraform init
+","Completed","04-07-2025 22:13:11","04-07-2025 22:13:13"
+"120","terraform plan
+","Completed","04-07-2025 22:13:22","04-07-2025 22:13:26"
+"121","terraform apply
+","Completed","04-07-2025 22:13:41","04-07-2025 22:14:16"
+"122","terraform apply
+","Completed","04-07-2025 22:16:36","04-07-2025 22:16:36"
+"123","terraform apply","Completed","04-07-2025 22:17:37","04-07-2025 22:17:55"
+"124","terraform apply
+","Completed","04-07-2025 22:22:56","04-07-2025 22:22:56"
+"125","terraform apply","Completed","04-07-2025 22:24:59","04-07-2025 22:25:19"
+"126","terraform apply","Completed","04-07-2025 22:28:02","04-07-2025 22:28:16"
+"127","terraform apply","Completed","04-07-2025 22:36:38","04-07-2025 22:36:38"
+"128","terraform apply","Completed","04-07-2025 22:37:00","04-07-2025 22:37:25"
+"129","terraform apply","Completed","04-07-2025 22:51:04","04-07-2025 22:51:16"
+"130","terraform apply","Completed","04-07-2025 22:58:37","04-07-2025 22:58:53"
+"131","terraform init
+terraform plan
+terraform apply
+","Completed","04-07-2025 23:01:49","04-07-2025 23:01:51"
+"132","terraform apply","Completed","04-07-2025 23:02:29","04-07-2025 23:02:29"
+"133","terraform init
+terraform apply
+","Completed","04-07-2025 23:03:35","04-07-2025 23:03:50"
+"134","terraform apply
+","Completed","04-07-2025 23:05:10","04-07-2025 23:05:22"
+"135","terraform apply
+","Completed","04-07-2025 23:10:21","04-07-2025 23:11:11"
+"136","cd C:\patient-service\patient-service","Completed","05-07-2025 10:37:04","05-07-2025 10:37:04"
+"137","Get-History","Completed","05-07-2025 10:37:17","05-07-2025 10:37:17"

@@ -1,0 +1,50 @@
+---
+- name: Deploy Patient Service on EC2
+  hosts: patient_servers
+  become: yes  # runs commands with sudo
+  tasks:
+
+    - name: Update all packages
+      yum:
+        name: '*'
+        state: latest
+
+    - name: Install Docker
+      # OR just install Docker using yum
+      yum:
+        name: docker
+        state: present
+
+    - name: Start Docker service
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Add ec2-user to docker group
+      user:
+        name: ec2-user
+        groups: docker
+        append: yes
+
+    - name: Pull patient-service Docker image
+      docker_image:
+        name: anjali8329/patient-service
+        tag: latest
+        source: pull
+
+    - name: Stop existing container if running
+      docker_container:
+        name: patient-service
+        state: absent
+        force_kill: yes
+      ignore_errors: yes
+
+    - name: Run patient-service Docker container
+      docker_container:
+        name: patient-service
+        image: anjali8329/patient-service:latest
+        state: started
+        restart_policy: always
+        ports:
+          - "8081:8080"
